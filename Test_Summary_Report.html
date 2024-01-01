@@ -1,0 +1,150 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Naveen's Test Automation Results </title>
+    <style>
+      <style>
+    body { font-family: Arial, sans-serif; text-align: center; }
+    h1 { text-decoration: underline; }
+    .main-table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { border: 2px solid #333; padding: 8px; }
+    th { background-color: #4169e1; color: white; }
+    .success { background-color: #32cd32; }
+    .failure { background-color: #ff0000; }
+    .info-container { display: flex; justify-content: space-between; align-items: flex-start; }
+    .info-table { width: auto; }
+    .left-table-container { width: 70%; text-align: left; }
+    .right-table-container { width: 30%; padding-left: 20px; }
+</style>
+    </style>
+  </head>
+  <body>
+    <h1>REST API Test Execution Summary Report</h1>
+    <div class="info-container">
+      <div class="left-table-container">
+        <table class="info-table">
+          <tr>
+            <th colspan="2">Test Environment</th>
+          </tr>
+          <tr>
+            <td>Platform</td>
+            <td>Microsoft Windows 10 Home Single Language|C:\Windows|\Device\Harddisk0\Partition2</td>
+          </tr>
+          <tr>
+            <td>OS Version</td>
+            <td>10.0.19045</td>
+          </tr>
+          <tr>
+            <td>User Domain</td>
+            <td>DESKTOP-C1214JN</td>
+          </tr>
+          <tr>
+            <td>Machine Name</td>
+            <td>DESKTOP-C1214JN</td>
+          </tr>
+          <tr>
+            <td>User</td>
+            <td>Naveen</td>
+          </tr>
+          <tr>
+            <td>Nunit-Version</td>
+            <td>2.5.8.0</td>
+          </tr>
+        </table>
+      </div>
+      <div class="right-table-container">
+        <table class="info-table">
+          <tr>
+            <th colspan="2">Test Execution Status</th>
+          </tr>
+          <tr>
+            <td>Total Number of Test Cases</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>Total Executed</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>Total Number of Test Cases Passed</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Total Number of Test Cases Failed</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Total Number of Test Cases Skipped</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Test Execution Date</td>
+            <td>2023-12-17</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <table class="main-table">
+      <tr>
+        <th>Test Name</th>
+        <th>Status</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Automated API Tests.Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employee,5</td>
+        <td><span class="success">Passed</span></td>
+        <td>Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employee,5</td>
+      </tr>
+      <tr>
+        <td>Automated API Tests.Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employees,</td>
+        <td><span class="success">Passed</span></td>
+        <td>Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employees,</td>
+      </tr>
+      <tr>
+        <td>Automated API Tests.Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employees,9</td>
+        <td><span class="failure">Failed</span></td>
+        <td>Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employees,9</td>
+      </tr>
+      <tr>
+        <td colspan="3"><strong>Failure Details:</strong><br>
+ Message: String lengths are both 4. Strings differ at index 0.
+Expected: {PASS}
+But was:  {FAIL}
+-----------^<br>
+                                   Stack Trace: at line: 36 in D:\AutomationP6\Pester\TestRunner.tests.ps1
+36:                        $result | Should Be "PASS"
+</td>
+      </tr>
+      <tr>
+        <td>Automated API Tests.Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employee,11</td>
+        <td><span class="success">Passed</span></td>
+        <td>Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employee,11</td>
+      </tr>
+      <tr>
+        <td>Automated API Tests.Executing VerifyApiPost for Employee_Post with data https://dummy.restapiexample.com/api/v1/create,ID=12501,Employee_name=Naveen,Employee_salary=120000,Employee_age=37,Profile_image=""</td>
+        <td><span class="success">Passed</span></td>
+        <td>Executing VerifyApiPost for Employee_Post with data https://dummy.restapiexample.com/api/v1/create,ID=12501,Employee_name=Naveen,Employee_salary=120000,Employee_age=37,Profile_image=""</td>
+      </tr>
+      <tr>
+        <td>Automated API Tests.Executing VerifyApiPut for Employee_Put with data https://dummy.restapiexample.com/public/api/v1/update/ 66,Employee_name=Naveen,Employee_salary=120000,Employee_age=37,Profile_image=""</td>
+        <td><span class="success">Passed</span></td>
+        <td>Executing VerifyApiPut for Employee_Put with data https://dummy.restapiexample.com/public/api/v1/update/ 66,Employee_name=Naveen,Employee_salary=120000,Employee_age=37,Profile_image=""</td>
+      </tr>
+      <tr>
+        <td>Automated API Tests.Executing VerifyApiDelete for Employee_Delete with data https://dummy.restapiexample.com/public/api/v1/delete/66,</td>
+        <td><span class="failure">Failed</span></td>
+        <td>Executing VerifyApiDelete for Employee_Delete with data https://dummy.restapiexample.com/public/api/v1/delete/66,</td>
+      </tr>
+      <tr>
+        <td colspan="3"><strong>Failure Details:</strong><br>
+ Message: String lengths are both 4. Strings differ at index 0.
+Expected: {PASS}
+But was:  {FAIL}
+-----------^<br>
+                                   Stack Trace: at line: 36 in D:\AutomationP6\Pester\TestRunner.tests.ps1
+36:                        $result | Should Be "PASS"
+</td>
+      </tr>
+    </table>
+  </body>
+</html>

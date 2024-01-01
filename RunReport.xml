@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="7" errors="0" failures="2" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2023-12-18" time="00:47:58">
+  <environment user="Naveen" machine-name="DESKTOP-C1214JN" cwd="D:\AutomationP6\Pester" user-domain="DESKTOP-C1214JN" platform="Microsoft Windows 10 Home Single Language|C:\Windows|\Device\Harddisk0\Partition2" nunit-version="2.5.8.0" os-version="10.0.19045" clr-version="4.0.30319.42000" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Powershell" name="Pester" executed="True" result="Failure" success="False" time="7.8947" asserts="0">
+    <results>
+      <test-suite type="TestFixture" name="Automated API Tests" executed="True" result="Failure" success="False" time="7.8947" asserts="0" description="Automated API Tests">
+        <results>
+          <test-case description="Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employee,5" name="Automated API Tests.Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employee,5" time="4.515" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employees," name="Automated API Tests.Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employees," time="0.291" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employees,9" name="Automated API Tests.Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employees,9" time="0.8361" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>String lengths are both 4. Strings differ at index 0.
+Expected: {PASS}
+But was:  {FAIL}
+-----------^</message>
+              <stack-trace>at line: 36 in D:\AutomationP6\Pester\TestRunner.tests.ps1
+36:                        $result | Should Be "PASS"
+</stack-trace>
+            </failure>
+          </test-case>
+          <test-case description="Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employee,11" name="Automated API Tests.Executing VerifyAPIGet for Employee_Get with data https://dummy.restapiexample.com/api/v1/employee,11" time="0.1235" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Executing VerifyApiPost for Employee_Post with data https://dummy.restapiexample.com/api/v1/create,ID=12501,Employee_name=Naveen,Employee_salary=120000,Employee_age=37,Profile_image=&quot;&quot;" name="Automated API Tests.Executing VerifyApiPost for Employee_Post with data https://dummy.restapiexample.com/api/v1/create,ID=12501,Employee_name=Naveen,Employee_salary=120000,Employee_age=37,Profile_image=&quot;&quot;" time="0.7498" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Executing VerifyApiPut for Employee_Put with data https://dummy.restapiexample.com/public/api/v1/update/ 66,Employee_name=Naveen,Employee_salary=120000,Employee_age=37,Profile_image=&quot;&quot;" name="Automated API Tests.Executing VerifyApiPut for Employee_Put with data https://dummy.restapiexample.com/public/api/v1/update/ 66,Employee_name=Naveen,Employee_salary=120000,Employee_age=37,Profile_image=&quot;&quot;" time="0.7078" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Executing VerifyApiDelete for Employee_Delete with data https://dummy.restapiexample.com/public/api/v1/delete/66," name="Automated API Tests.Executing VerifyApiDelete for Employee_Delete with data https://dummy.restapiexample.com/public/api/v1/delete/66," time="0.6715" asserts="0" success="False" result="Failure" executed="True">
+            <failure>
+              <message>String lengths are both 4. Strings differ at index 0.
+Expected: {PASS}
+But was:  {FAIL}
+-----------^</message>
+              <stack-trace>at line: 36 in D:\AutomationP6\Pester\TestRunner.tests.ps1
+36:                        $result | Should Be "PASS"
+</stack-trace>
+            </failure>
+          </test-case>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
